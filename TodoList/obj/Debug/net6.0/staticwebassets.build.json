@@ -1,11 +1,71 @@
 {
   "Version": 1,
-  "Hash": "Rev96eSJ12qs4vt+cqv4wD2kLqP4/FQjXe8jXCp5pxA=",
+  "Hash": "39iPJ28H+dvohzViZFzME5SgfWlgRt3KfU2hI9mGHxk=",
   "Source": "TodoList",
   "BasePath": "_content/TodoList",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "TodoList/wwwroot",
+      "Source": "TodoList",
+      "ContentRoot": "/Users/gavin/Projects/TodoList/TodoList/wwwroot/",
+      "BasePath": "_content/TodoList",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/gavin/Projects/TodoList/TodoList/wwwroot/css/site.css",
+      "SourceId": "TodoList",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gavin/Projects/TodoList/TodoList/wwwroot/",
+      "BasePath": "_content/TodoList",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/Users/gavin/Projects/TodoList/TodoList/wwwroot/index.html",
+      "SourceId": "TodoList",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gavin/Projects/TodoList/TodoList/wwwroot/",
+      "BasePath": "_content/TodoList",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/gavin/Projects/TodoList/TodoList/wwwroot/js/site.js",
+      "SourceId": "TodoList",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gavin/Projects/TodoList/TodoList/wwwroot/",
+      "BasePath": "_content/TodoList",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/site.js"
+    }
+  ]
 }
