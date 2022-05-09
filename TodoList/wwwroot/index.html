@@ -10,6 +10,11 @@
     <h3>Add</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
         <input type="text" id="add-name" placeholder="New to-do">
+        <select name="category" id="category">
+            <option value="work">Work</option>
+            <option value="study">Study</option>
+            <option value="hobby">Hobby</option>
+        </select>
         <input type="submit" value="Add">
     </form>
 
@@ -19,6 +24,11 @@
             <input type="hidden" id="edit-id">
             <input type="checkbox" id="edit-isComplete">
             <input type="text" id="edit-name">
+            <select name="categoryUpdate" id="categoryUpdate">
+                <option value="work">Work</option>
+                <option value="study">Study</option>
+                <option value="hobby">Hobby</option>
+            </select>
             <input type="submit" value="Save">
             <a onclick="closeInput()" aria-label="Close">&#10006;</a>
         </form>
@@ -30,6 +40,7 @@
         <tr>
             <th>Is Complete?</th>
             <th>Name</th>
+            <th>Category</th>
             <th></th>
             <th></th>
         </tr>

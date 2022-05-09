@@ -10,10 +10,14 @@ function getItems() {
 
 function addItem() {
     const addNameTextbox = document.getElementById('add-name');
+    const categoryBox = document.getElementById('category').options[document.getElementById('category').selectedIndex].value;
+
+    console.log(categoryBox);
 
     const item = {
         isComplete: false,
-        name: addNameTextbox.value.trim()
+        name: addNameTextbox.value.trim(),
+        Category: categoryBox
     };
 
     fetch(uri, {
@@ -47,14 +51,18 @@ function displayEditForm(id) {
     document.getElementById('edit-id').value = item.id;
     document.getElementById('edit-isComplete').checked = item.isComplete;
     document.getElementById('editForm').style.display = 'block';
+    var catUpdate = document.getElementById('categoryUpdate');
 }
 
 function updateItem() {
     const itemId = document.getElementById('edit-id').value;
+    const categoryBoxUpdate = document.getElementById('categoryUpdate').options[document.getElementById('categoryUpdate').selectedIndex].value;
+
     const item = {
         id: parseInt(itemId, 10),
         isComplete: document.getElementById('edit-isComplete').checked,
-        name: document.getElementById('edit-name').value.trim()
+        name: document.getElementById('edit-name').value.trim(),
+        category: categoryBoxUpdate
     };
 
     fetch(`${uri}/${itemId}`, {
@@ -89,6 +97,8 @@ function _displayItems(data) {
 
     _displayCount(data.length);
 
+    console.log(data);
+
     const button = document.createElement('button');
 
     data.forEach(item => {
@@ -110,16 +120,36 @@ function _displayItems(data) {
         let td1 = tr.insertCell(0);
         td1.appendChild(isCompleteCheckbox);
 
+        console.log(item.Category);
+
         let td2 = tr.insertCell(1);
-        let textNode = document.createTextNode(item.name);
-        td2.appendChild(textNode);
+        let textNodeName = document.createTextNode(item.name);
+        td2.appendChild(textNodeName);
+
+        if (item.isComplete == true) {
+            td2.setAttribute("class", "checkedItem");
+        }
 
         let td3 = tr.insertCell(2);
-        td3.appendChild(editButton);
+        let textNodeCategory = document.createTextNode(item.category);
+        td3.appendChild(textNodeCategory);
 
         let td4 = tr.insertCell(3);
-        td4.appendChild(deleteButton);
+        td4.appendChild(editButton);
+
+        let td5 = tr.insertCell(4);
+        td5.appendChild(deleteButton);
     });
+
+    const items = document.querySelectorAll(".checkedItem");
+
+    if (items.length > 0) {
+
+        items.forEach(el => {
+            el.style.textDecoration = "line-through";
+        });
+
+    }
 
     todos = data;
 }
