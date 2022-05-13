@@ -81,6 +81,50 @@ function updateItem() {
     return false;
 }
 
+function editElement(Id) {
+
+    const checkbox = document.getElementById(`checkbox_id_${Id}`);
+
+    if (checkbox.checked == true) {
+        fetch(`${uri}/${Id}`, {
+            method: 'PATCH',
+            body: JSON.stringify(
+                [
+                    {
+                        "path": "/isComplete",
+                        "value": true,
+                        "op": "replace"
+                    }
+                ]),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+        })
+            .then(() => getItems())
+            .catch(error => console.error('Unable to update item.', error));
+    } else {
+        fetch(`${uri}/${Id}`, {
+            method: 'PATCH',
+            body: JSON.stringify(
+                [
+                    {
+                        "path": "/isComplete",
+                        "value": false,
+                        "op": "replace"
+                    }
+                ]),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+        })
+            .then(() => getItems())
+            .catch(error => console.error('Unable to update item.', error));
+    }
+
+    }
+
 function closeInput() {
     document.getElementById('editForm').style.display = 'none';
 }
@@ -104,8 +148,10 @@ function _displayItems(data) {
     data.forEach(item => {
         let isCompleteCheckbox = document.createElement('input');
         isCompleteCheckbox.type = 'checkbox';
-        isCompleteCheckbox.disabled = true;
+        //isCompleteCheckbox.disabled = false;
         isCompleteCheckbox.checked = item.isComplete;
+        isCompleteCheckbox.setAttribute('id', `checkbox_id_${item.id}`);
+        isCompleteCheckbox.setAttribute('onclick', `editElement(${item.id})`);
 
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';
@@ -116,7 +162,7 @@ function _displayItems(data) {
         deleteButton.setAttribute('onclick', `deleteItem(${item.id})`);
 
         let tr = tBody.insertRow();
-
+  
         let td1 = tr.insertCell(0);
         td1.appendChild(isCompleteCheckbox);
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "431kmHihbK9TKZud4ClFGTrj+whmm786ubRWTdf2+jhn7NwZZ9A0HMM4BKt9LnivlXlgFzRmh/0i7wp0zu6wpg==",
+  "dgSpecHash": "LUn2cytKcvu/prLt/Ls336y900kYuRg0W7iUGlYBPF6yv91XbQIdYULZu501skUU5GFQ382qPBjLKh+n5NeyWg==",
   "success": true,
   "projectFilePath": "/Users/gavin/Projects/TodoList/TodoList/TodoList.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "/Users/gavin/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/Users/gavin/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
     "/Users/gavin/.nuget/packages/messagepackanalyzer/2.1.152/messagepackanalyzer.2.1.152.nupkg.sha512",
+    "/Users/gavin/.nuget/packages/microsoft.aspnetcore.jsonpatch/6.0.5/microsoft.aspnetcore.jsonpatch.6.0.5.nupkg.sha512",
+    "/Users/gavin/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/6.0.5/microsoft.aspnetcore.mvc.newtonsoftjson.6.0.5.nupkg.sha512",
     "/Users/gavin/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.0/microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "/Users/gavin/.nuget/packages/microsoft.bcl.asyncinterfaces/5.0.0/microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "/Users/gavin/.nuget/packages/microsoft.build/17.0.0/microsoft.build.17.0.0.nupkg.sha512",
@@ -28,7 +30,7 @@
     "/Users/gavin/.nuget/packages/microsoft.codeanalysis.visualbasic.workspaces/4.0.0/microsoft.codeanalysis.visualbasic.workspaces.4.0.0.nupkg.sha512",
     "/Users/gavin/.nuget/packages/microsoft.codeanalysis.workspaces.common/4.0.0/microsoft.codeanalysis.workspaces.common.4.0.0.nupkg.sha512",
     "/Users/gavin/.nuget/packages/microsoft.codeanalysis.workspaces.msbuild/4.0.0/microsoft.codeanalysis.workspaces.msbuild.4.0.0.nupkg.sha512",
-    "/Users/gavin/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/gavin/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/gavin/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/gavin/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/Users/gavin/.nuget/packages/microsoft.data.sqlite.core/6.0.4/microsoft.data.sqlite.core.6.0.4.nupkg.sha512",
@@ -78,6 +80,7 @@
     "/Users/gavin/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "/Users/gavin/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/Users/gavin/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/gavin/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/gavin/.nuget/packages/nuget.common/5.11.0/nuget.common.5.11.0.nupkg.sha512",
     "/Users/gavin/.nuget/packages/nuget.configuration/5.11.0/nuget.configuration.5.11.0.nupkg.sha512",
     "/Users/gavin/.nuget/packages/nuget.dependencyresolver.core/5.11.0/nuget.dependencyresolver.core.5.11.0.nupkg.sha512",
